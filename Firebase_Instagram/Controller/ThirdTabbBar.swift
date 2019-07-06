@@ -1,7 +1,6 @@
 import UIKit
 import FirebaseAuth
 import Firebase
-import SideMenu
 
 
 class ThirdTabbBar: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
@@ -44,16 +43,15 @@ class ThirdTabbBar: UIViewController, UINavigationControllerDelegate, UIImagePic
 
     @IBAction func shareButton(_ sender: UIBarButtonItem) {
         print("Share TAbbed")
-        upload()
+        uploadStory()
         uploadImage()
     }
     @IBAction func cancelButton(_ sender: UIBarButtonItem) {
         print("Cancel TAbbed")
-        present(SideMenuManager.default.menuLeftNavigationController!, animated: true, completion: nil)
-
+    
     }
     
-    func upload() {
+    func uploadStory() {
         var ref: DocumentReference? = nil
         
         // Add a new document with a generated ID

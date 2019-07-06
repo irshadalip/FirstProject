@@ -1,78 +1,78 @@
 
 /* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "B5B-IN-cjI"; */
-"B5B-IN-cjI.title" = "Item";
+"B5B-IN-cjI.title" = "Articolo";
 
 /* Class = "UILabel"; text = "Fourth Label"; ObjectID = "BDQ-Kn-bPa"; */
-"BDQ-Kn-bPa.text" = "Fourth Label";
+"BDQ-Kn-bPa.text" = "Quarta etichetta";
 
 /* Class = "UIButton"; normalTitle = "Stories"; ObjectID = "BFd-jS-Pvd"; */
-"BFd-jS-Pvd.normalTitle" = "Stories";
+"BFd-jS-Pvd.normalTitle" = "Storie";
 
 /* Class = "UIButton"; normalTitle = "Add Video"; ObjectID = "CyC-jd-bKg"; */
-"CyC-jd-bKg.normalTitle" = "Add Video";
+"CyC-jd-bKg.normalTitle" = "Aggiungi video";
 
 /* Class = "UITabBarItem"; title = "Item"; ObjectID = "JRW-R8-FPR"; */
-"JRW-R8-FPR.title" = "Item";
+"JRW-R8-FPR.title" = "Articolo";
 
 /* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "KZw-xR-cmN"; */
-"KZw-xR-cmN.title" = "Item";
+"KZw-xR-cmN.title" = "Articolo";
 
 /* Class = "UINavigationItem"; title = "Creat Post"; ObjectID = "LYx-Aa-pxA"; */
-"LYx-Aa-pxA.title" = "Creat Post";
+"LYx-Aa-pxA.title" = "Post creato";
 
 /* Class = "UILabel"; text = "Second Label"; ObjectID = "Oim-uz-VsG"; */
-"Oim-uz-VsG.text" = "Second Label";
+"Oim-uz-VsG.text" = "Seconda etichetta";
 
 /* Class = "UIButton"; normalTitle = "Logout Button"; ObjectID = "S5n-xf-Yhl"; */
-"S5n-xf-Yhl.normalTitle" = "Logout Button";
+"S5n-xf-Yhl.normalTitle" = "Pulsante di disconnessione";
 
 /* Class = "UILabel"; text = "Desc"; ObjectID = "VHi-n7-Iwj"; */
-"VHi-n7-Iwj.text" = "Desc";
+"VHi-n7-Iwj.text" = "desc";
 
 /* Class = "UITabBarItem"; title = "Item"; ObjectID = "XIr-kX-A6M"; */
-"XIr-kX-A6M.title" = "Item";
+"XIr-kX-A6M.title" = "Articolo";
 
 /* Class = "UIButton"; normalTitle = "Share App Button"; ObjectID = "Xp4-S7-lsp"; */
-"Xp4-S7-lsp.normalTitle" = "Share App Button";
+"Xp4-S7-lsp.normalTitle" = "Condividi il pulsante dell'app";
 
 /* Class = "UILabel"; text = "Image"; ObjectID = "ddy-Yg-0ew"; */
-"ddy-Yg-0ew.text" = "Image";
+"ddy-Yg-0ew.text" = "Immagine";
 
 /* Class = "UIBarButtonItem"; title = "Share"; ObjectID = "dqf-SE-xe6"; */
-"dqf-SE-xe6.title" = "Share";
+"dqf-SE-xe6.title" = "Condividere";
 
 /* Class = "UITabBarItem"; title = "Item"; ObjectID = "dwp-Lz-Ajd"; */
-"dwp-Lz-Ajd.title" = "Item";
+"dwp-Lz-Ajd.title" = "Articolo";
 
 /* Class = "UILabel"; text = "Five Label"; ObjectID = "ejY-be-gA4"; */
-"ejY-be-gA4.text" = "Five Label";
+"ejY-be-gA4.text" = "Cinque etichette";
 
 /* Class = "UILabel"; text = "User Name"; ObjectID = "eqG-6c-Lnk"; */
-"eqG-6c-Lnk.text" = "User Name";
+"eqG-6c-Lnk.text" = "Nome utente";
 
 /* Class = "UITextView"; text = "Put Your Post"; ObjectID = "fLe-T0-DZH"; */
-"fLe-T0-DZH.text" = "Put Your Post";
+"fLe-T0-DZH.text" = "Metti il ​​tuo post";
 
 /* Class = "UIButton"; normalTitle = "Home Button"; ObjectID = "fnZ-Ya-6KH"; */
-"fnZ-Ya-6KH.normalTitle" = "Home Button";
+"fnZ-Ya-6KH.normalTitle" = "Pulsante Home";
 
 /* Class = "UIButton"; normalTitle = "Watch All"; ObjectID = "ibU-Jb-Z8G"; */
-"ibU-Jb-Z8G.normalTitle" = "Watch All";
+"ibU-Jb-Z8G.normalTitle" = "Guarda tutto";
 
 /* Class = "UIButton"; normalTitle = "Add Image"; ObjectID = "kf2-cX-hf4"; */
-"kf2-cX-hf4.normalTitle" = "Add Image";
+"kf2-cX-hf4.normalTitle" = "Aggiungi immagine";
 
 /* Class = "UITabBarItem"; title = "Item 2"; ObjectID = "kgT-i0-VJb"; */
-"kgT-i0-VJb.title" = "Item 2";
+"kgT-i0-VJb.title" = "Articolo 2";
 
 /* Class = "UITabBarItem"; title = "Item 1"; ObjectID = "nXF-Jn-Z8Q"; */
-"nXF-Jn-Z8Q.title" = "Item 1";
+"nXF-Jn-Z8Q.title" = "Articolo 1";
 
 /* Class = "UILabel"; text = "Anony"; ObjectID = "rV9-P1-v4t"; */
-"rV9-P1-v4t.text" = "Anony";
+"rV9-P1-v4t.text" = "anony";
 
 /* Class = "UITabBarItem"; title = "Item"; ObjectID = "yab-wP-NeS"; */
-"yab-wP-NeS.title" = "Item";
+"yab-wP-NeS.title" = "Articolo";
 
 /* Class = "UIBarButtonItem"; title = "Manu"; ObjectID = "yt5-ZB-PZe"; */
 "yt5-ZB-PZe.title" = "Manu";
