@@ -83,3 +83,7 @@ class ThirdTabbBar: UIViewController, UINavigationControllerDelegate, UIImagePic
     }
     
 }
+
+
+//image and textview not empty after share post.
+//sidemenu should not be here..its in Home Screen
