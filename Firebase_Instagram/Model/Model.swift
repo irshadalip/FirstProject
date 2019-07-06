@@ -11,8 +11,11 @@ import Foundation
 class Model {
 
     var post: String?
-    var img: UIImage?
+    var img: UIImage?   //you can give name as follow QAMS or swift standard
 }
+
+
+
 
 
 
