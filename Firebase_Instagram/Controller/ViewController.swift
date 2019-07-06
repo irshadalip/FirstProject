@@ -4,7 +4,7 @@ import FBSDKLoginKit
 import Firebase
 import FirebaseAuth
 
-class ViewController: UIViewController, LoginButtonDelegate{
+class ViewController: UIViewController, LoginButtonDelegate{  //you can extends this delegate for clean coding
 
     @IBOutlet weak var backtOutView: UIView!
     
