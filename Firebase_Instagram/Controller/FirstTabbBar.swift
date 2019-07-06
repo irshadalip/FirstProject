@@ -166,7 +166,7 @@ extension FirstTabbBar{
 //        return UITableView.automaticDimension
         return 350
     }
-    func UIUpdate(){
+    func UIUpdate(){   //this method never call
 //        firstButton.clipsToBounds = true;
 //        firstButton.layer.cornerRadius = firstButton.layer.frame.size.width/2;
 //        secondButton.clipsToBounds = true;
