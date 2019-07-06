@@ -13,10 +13,8 @@ class ThirdTabbBar: UIViewController, UINavigationControllerDelegate, UIImagePic
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationController!.isNavigationBarHidden = true
-        self.navigationItem.leftBarButtonItem = nil
-        self.navigationItem.hidesBackButton = true
+
+        ViewLoad()
     }
     override func viewWillAppear(_ animated: Bool) {
         
@@ -31,14 +29,10 @@ class ThirdTabbBar: UIViewController, UINavigationControllerDelegate, UIImagePic
             
         }
     }
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
-            imageView.image = image
-        }
-        else{
-            
-        }
-        self.dismiss(animated: true, completion: nil)
+    func ViewLoad() {
+        self.navigationController!.isNavigationBarHidden = true
+        self.navigationItem.leftBarButtonItem = nil
+        self.navigationItem.hidesBackButton = true
     }
 
     @IBAction func shareButton(_ sender: UIBarButtonItem) {
@@ -50,7 +44,19 @@ class ThirdTabbBar: UIViewController, UINavigationControllerDelegate, UIImagePic
         print("Cancel TAbbed")
     
     }
-    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
+            imageView.image = image
+        }
+        else{
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
+}
+
+
+//MARK:- IMAGE-STORY-UPLOAD extension
+extension ThirdTabbBar{
     func uploadStory() {
         var ref: DocumentReference? = nil
         
@@ -74,10 +80,8 @@ class ThirdTabbBar: UIViewController, UINavigationControllerDelegate, UIImagePic
         uploadRef.putData(imageDtat, metadata: uploadMetaData) {(downloadMetadata, error) in }
         if Error.self != nil {
             print("uploaded photo")
-            
         } else {
             print("uploaded Error")
         }
     }
-    
 }

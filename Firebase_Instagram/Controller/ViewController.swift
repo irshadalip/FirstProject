@@ -14,7 +14,7 @@ class ViewController: UIViewController, LoginButtonDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationController!.isNavigationBarHidden = true
+        self.navigationController?.isNavigationBarHidden = true
         self.navigationItem.leftBarButtonItem = nil
         self.navigationItem.hidesBackButton = true
 

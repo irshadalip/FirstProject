@@ -68,7 +68,7 @@
             </objects>
             <point key="canvasLocation" x="837.60000000000002" y="133.5832083958021"/>
         </scene>
-        <!--Item 2-->
+        <!--Chat-->
         <scene sceneID="JEh-3M-JDb">
             <objects>
                 <viewController storyboardIdentifier="SecondTabbBar" id="pVh-v0-NRv" customClass="SecondTabbBar" customModule="Firebase_Instagram" customModuleProvider="target" sceneMemberID="viewController">
@@ -87,11 +87,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="VOB-dj-f6F"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" image="Comment" id="kgT-i0-VJb"/>
+                    <tabBarItem key="tabBarItem" title="Chat" image="Comment" id="kgT-i0-VJb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HOK-2R-m0F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1517.5999999999999" y="-553.67316341829087"/>
+            <point key="canvasLocation" x="2849" y="-904"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="MwR-7u-oxO">
@@ -160,9 +160,9 @@
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="SZd-dI-6qI"/>
                 <tapGestureRecognizer id="Oid-xd-kBj"/>
             </objects>
-            <point key="canvasLocation" x="71.200000000000003" y="-552.77361319340332"/>
+            <point key="canvasLocation" x="679" y="-904"/>
         </scene>
-        <!--Item 1-->
+        <!--Home-->
         <scene sceneID="hcb-LS-eQt">
             <objects>
                 <viewController storyboardIdentifier="FirstTabbBar" id="vIr-hs-og5" customClass="FirstTabbBar" customModule="Firebase_Instagram" customModuleProvider="target" sceneMemberID="viewController">
@@ -278,14 +278,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VGX-gr-q1n"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" image="Combined Shape" id="nXF-Jn-Z8Q"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Combined Shape" id="nXF-Jn-Z8Q"/>
                     <connections>
                         <outlet property="tableView" destination="Rn1-37-KQH" id="mcM-s3-RQb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yuR-Ye-KKw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="838" y="-552"/>
+            <point key="canvasLocation" x="2199" y="-1288"/>
         </scene>
         <!--TabUI View Controller-->
         <scene sceneID="FbB-tQ-Gx6">
@@ -308,7 +308,7 @@
             </objects>
             <point key="canvasLocation" x="1519" y="134"/>
         </scene>
-        <!--Item-->
+        <!--Add-->
         <scene sceneID="ixk-SE-8BH">
             <objects>
                 <viewController storyboardIdentifier="ThirdTabbBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vXC-gG-91u" customClass="ThirdTabbBar" customModule="Firebase_Instagram" customModuleProvider="target" sceneMemberID="viewController">
@@ -326,7 +326,6 @@
                                         <barButtonItem key="leftBarButtonItem" title="Manu" id="yt5-ZB-PZe">
                                             <connections>
                                                 <action selector="cancelButton:" destination="vXC-gG-91u" id="3ws-TG-Qmy"/>
-                                                <segue destination="j7Z-xc-LI4" kind="presentation" identifier="" id="KUK-dC-dgn"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Share" id="dqf-SE-xe6">
@@ -387,47 +386,39 @@
                                     <action selector="addImage:" destination="vXC-gG-91u" eventType="touchUpInside" id="bsw-5a-o8G"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CyC-jd-bKg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0v4-uW-Asf">
                                 <rect key="frame" x="288" y="503" width="71" height="30"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="wrb-su-OLB"/>
-                                </constraints>
+                                <color key="backgroundColor" red="0.63137254899999995" green="0.65098039220000004" blue="0.67843137249999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Add Video">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="addImage:" destination="vXC-gG-91u" eventType="touchUpInside" id="XdH-yb-xoq"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="kf2-cX-hf4" firstAttribute="top" secondItem="S3T-nn-mUC" secondAttribute="bottom" constant="23" id="0EK-L9-ATL"/>
                             <constraint firstItem="fLe-T0-DZH" firstAttribute="top" secondItem="kSW-b2-P9v" secondAttribute="bottom" constant="8" id="0Ez-Rk-KIL"/>
                             <constraint firstItem="y4o-XJ-fMx" firstAttribute="trailing" secondItem="w1n-sY-jlG" secondAttribute="trailing" id="2gQ-kM-LyM"/>
                             <constraint firstItem="VHi-n7-Iwj" firstAttribute="leading" secondItem="kSW-b2-P9v" secondAttribute="trailing" constant="20" id="50B-nV-mhL"/>
+                            <constraint firstItem="w1n-sY-jlG" firstAttribute="trailing" secondItem="0v4-uW-Asf" secondAttribute="trailing" constant="16" id="7GD-lp-qBo"/>
                             <constraint firstItem="S3T-nn-mUC" firstAttribute="top" secondItem="fLe-T0-DZH" secondAttribute="bottom" constant="10" id="BTU-Zy-uK8"/>
                             <constraint firstItem="rV9-P1-v4t" firstAttribute="top" secondItem="y4o-XJ-fMx" secondAttribute="bottom" constant="10" id="CFx-K1-6Gd"/>
                             <constraint firstItem="kSW-b2-P9v" firstAttribute="top" secondItem="y4o-XJ-fMx" secondAttribute="bottom" constant="10" id="CoD-0H-u5K"/>
-                            <constraint firstItem="w1n-sY-jlG" firstAttribute="bottom" secondItem="CyC-jd-bKg" secondAttribute="bottom" constant="85" id="FAo-Rq-pFl"/>
                             <constraint firstItem="fLe-T0-DZH" firstAttribute="leading" secondItem="w1n-sY-jlG" secondAttribute="leading" id="Ped-L3-Rrx"/>
-                            <constraint firstItem="w1n-sY-jlG" firstAttribute="trailing" secondItem="CyC-jd-bKg" secondAttribute="trailing" constant="16" id="Q77-ON-dZ4"/>
-                            <constraint firstItem="kf2-cX-hf4" firstAttribute="leading" secondItem="w1n-sY-jlG" secondAttribute="leading" constant="16" id="SUm-fU-m5p"/>
                             <constraint firstItem="S3T-nn-mUC" firstAttribute="leading" secondItem="w1n-sY-jlG" secondAttribute="leading" constant="16" id="VaW-Yc-WCm"/>
-                            <constraint firstItem="w1n-sY-jlG" firstAttribute="bottom" secondItem="kf2-cX-hf4" secondAttribute="bottom" constant="85" id="aA2-05-iAR"/>
                             <constraint firstItem="w1n-sY-jlG" firstAttribute="trailing" secondItem="S3T-nn-mUC" secondAttribute="trailing" constant="16" id="aYG-Q6-2vW"/>
                             <constraint firstItem="y4o-XJ-fMx" firstAttribute="leading" secondItem="w1n-sY-jlG" secondAttribute="leading" id="elj-mM-nOR"/>
+                            <constraint firstItem="kf2-cX-hf4" firstAttribute="leading" secondItem="w1n-sY-jlG" secondAttribute="leading" constant="16" id="fn5-RG-7w4"/>
                             <constraint firstItem="VHi-n7-Iwj" firstAttribute="top" secondItem="rV9-P1-v4t" secondAttribute="bottom" constant="10" id="g04-t0-POm"/>
                             <constraint firstItem="fLe-T0-DZH" firstAttribute="trailing" secondItem="w1n-sY-jlG" secondAttribute="trailing" id="hlZ-h7-nFA"/>
-                            <constraint firstItem="CyC-jd-bKg" firstAttribute="top" secondItem="S3T-nn-mUC" secondAttribute="bottom" constant="23" id="kxN-fT-BgY"/>
+                            <constraint firstItem="0v4-uW-Asf" firstAttribute="top" secondItem="S3T-nn-mUC" secondAttribute="bottom" constant="23" id="o9a-T8-cEO"/>
                             <constraint firstItem="y4o-XJ-fMx" firstAttribute="top" secondItem="w1n-sY-jlG" secondAttribute="top" id="s47-lK-LiA"/>
                             <constraint firstItem="rV9-P1-v4t" firstAttribute="leading" secondItem="kSW-b2-P9v" secondAttribute="trailing" constant="20" id="x9D-YM-ABc"/>
                             <constraint firstItem="kSW-b2-P9v" firstAttribute="leading" secondItem="w1n-sY-jlG" secondAttribute="leading" constant="10" id="yIS-gs-MNV"/>
+                            <constraint firstItem="kf2-cX-hf4" firstAttribute="top" secondItem="S3T-nn-mUC" secondAttribute="bottom" constant="23" id="zQp-zM-ixX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w1n-sY-jlG"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="Group 5" id="yab-wP-NeS"/>
+                    <tabBarItem key="tabBarItem" title="Add" image="Group 5" id="yab-wP-NeS"/>
                     <connections>
                         <outlet property="imageView" destination="S3T-nn-mUC" id="2ef-hZ-3z2"/>
                         <outlet property="textPost" destination="fLe-T0-DZH" id="1B2-IJ-L1w"/>
@@ -435,84 +426,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBl-1B-Ptk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2218" y="-661"/>
+            <point key="canvasLocation" x="3500" y="-553"/>
         </scene>
-        <!--Side Menu View Controller-->
-        <scene sceneID="pt7-de-AnP">
-            <objects>
-                <viewController id="VYf-6b-YZG" customClass="SideMenuViewController" customModule="Firebase_Instagram" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LcH-0Y-gbP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera" translatesAutoresizingMaskIntoConstraints="NO" id="rDA-yP-nxf">
-                                <rect key="frame" x="16" y="80" width="60" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="gIS-WB-vc0"/>
-                                    <constraint firstAttribute="height" constant="60" id="gv7-zY-DQH"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqG-6c-Lnk">
-                                <rect key="frame" x="16" y="148" width="85.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnZ-Ya-6KH">
-                                <rect key="frame" x="16" y="184.5" width="91" height="30"/>
-                                <state key="normal" title="Home Button">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="sideMenuAction:" destination="VYf-6b-YZG" eventType="touchUpInside" id="7uU-MM-7le"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xp4-S7-lsp">
-                                <rect key="frame" x="16" y="222.5" width="121" height="30"/>
-                                <state key="normal" title="Share App Button">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="sideMenuAction:" destination="VYf-6b-YZG" eventType="touchUpInside" id="uUj-tB-jPW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S5n-xf-Yhl">
-                                <rect key="frame" x="16" y="260.5" width="98" height="30"/>
-                                <state key="normal" title="Logout Button">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="sideMenuAction:" destination="VYf-6b-YZG" eventType="touchUpInside" id="yIc-4e-zVb"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Xp4-S7-lsp" firstAttribute="leading" secondItem="YFM-VV-ewV" secondAttribute="leading" constant="16" id="0aT-2C-1yi"/>
-                            <constraint firstItem="rDA-yP-nxf" firstAttribute="leading" secondItem="YFM-VV-ewV" secondAttribute="leading" constant="16" id="7sF-Gx-eQW"/>
-                            <constraint firstItem="eqG-6c-Lnk" firstAttribute="top" secondItem="rDA-yP-nxf" secondAttribute="bottom" constant="8" id="IDT-rf-L6o"/>
-                            <constraint firstItem="fnZ-Ya-6KH" firstAttribute="leading" secondItem="YFM-VV-ewV" secondAttribute="leading" constant="16" id="JrZ-38-5md"/>
-                            <constraint firstItem="S5n-xf-Yhl" firstAttribute="top" secondItem="Xp4-S7-lsp" secondAttribute="bottom" constant="8" id="K4g-kz-Uis"/>
-                            <constraint firstItem="fnZ-Ya-6KH" firstAttribute="top" secondItem="eqG-6c-Lnk" secondAttribute="bottom" constant="16" id="N9H-Fl-2I5"/>
-                            <constraint firstItem="rDA-yP-nxf" firstAttribute="top" secondItem="YFM-VV-ewV" secondAttribute="top" constant="16" id="SQo-qX-RpO"/>
-                            <constraint firstItem="S5n-xf-Yhl" firstAttribute="leading" secondItem="YFM-VV-ewV" secondAttribute="leading" constant="16" id="biJ-r9-OhA"/>
-                            <constraint firstItem="eqG-6c-Lnk" firstAttribute="leading" secondItem="YFM-VV-ewV" secondAttribute="leading" constant="16" id="h4w-s6-hqK"/>
-                            <constraint firstItem="Xp4-S7-lsp" firstAttribute="top" secondItem="fnZ-Ya-6KH" secondAttribute="bottom" constant="8" id="yGR-Pd-F2l"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="YFM-VV-ewV"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="0AB-0M-Ilf"/>
-                    <connections>
-                        <outlet property="loginOut" destination="S5n-xf-Yhl" id="bl7-9F-hb2"/>
-                        <outlet property="profileImageOut" destination="rDA-yP-nxf" id="xv8-QD-O9N"/>
-                        <outlet property="profileUser" destination="eqG-6c-Lnk" id="JHP-qt-eT0"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9iJ-79-hXX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3373.5999999999999" y="486.20689655172418"/>
-        </scene>
-        <!--Item-->
+        <!--User-->
         <scene sceneID="L34-F3-OmS">
             <objects>
                 <viewController id="kNE-GN-Xau" sceneMemberID="viewController">
@@ -531,13 +447,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="PU6-SF-XTD"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="Group 4" id="XIr-kX-A6M"/>
+                    <tabBarItem key="tabBarItem" title="User" image="Group 4" id="XIr-kX-A6M"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zI8-dQ-YRk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2901.5999999999999" y="-553.67316341829087"/>
+            <point key="canvasLocation" x="4170" y="-213"/>
         </scene>
-        <!--Item-->
+        <!--Like-->
         <scene sceneID="8f4-vZ-1bg">
             <objects>
                 <viewController id="MPa-g0-AEY" sceneMemberID="viewController">
@@ -556,11 +472,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ajE-ck-Jxc"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="Page 1" id="JRW-R8-FPR"/>
+                    <tabBarItem key="tabBarItem" title="Like" image="Page 1" id="JRW-R8-FPR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vSs-cv-V7m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3581.5999999999999" y="-554.57271364317842"/>
+            <point key="canvasLocation" x="4822" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="m0g-cy-8ih">
@@ -579,28 +495,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q6I-Ff-tof" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="BBd-7o-pBQ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j7Z-xc-LI4" customClass="UISideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="dwp-Lz-Ajd"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XZR-fd-Dbw">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="YES"/>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <segue destination="VYf-6b-YZG" kind="relationship" relationship="rootViewController" id="NwT-Ep-NlC"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Zr-jo-mgP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2599" y="487"/>
         </scene>
         <!--Side Menu View Controller-->
         <scene sceneID="nvJ-rz-N4V">
@@ -623,7 +517,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwg-hh-8b9">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwg-hh-8b9">
                                 <rect key="frame" x="16" y="240.5" width="91" height="30"/>
                                 <state key="normal" title="Home Button">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -632,7 +526,7 @@
                                     <action selector="sideMenuAction:" destination="fZO-MK-mrK" eventType="touchUpInside" id="WYh-Uf-cz5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sds-Fv-zzQ">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sds-Fv-zzQ">
                                 <rect key="frame" x="16" y="275.5" width="121" height="30"/>
                                 <state key="normal" title="Share App Button">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -641,10 +535,10 @@
                                     <action selector="sideMenuAction:" destination="fZO-MK-mrK" eventType="touchUpInside" id="kpS-AJ-Gh4"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gba-jH-a64" customClass="RatingViewController" customModule="Firebase_Instagram" customModuleProvider="target">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gba-jH-a64" customClass="RatingViewController" customModule="Firebase_Instagram" customModuleProvider="target">
                                 <rect key="frame" x="16" y="176.5" width="220" height="44"/>
                             </stackView>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ag-Jt-KYw">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ag-Jt-KYw">
                                 <rect key="frame" x="16" y="310.5" width="98" height="30"/>
                                 <state key="normal" title="Logout Button">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -680,7 +574,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LeV-lh-gcb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1584.8" y="-1555.7721139430287"/>
+            <point key="canvasLocation" x="4244" y="-1665"/>
         </scene>
         <!--Item-->
         <scene sceneID="ERc-Im-TKe">
@@ -702,7 +596,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LFI-58-rDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="460" y="-1555"/>
+            <point key="canvasLocation" x="3401" y="-1664"/>
         </scene>
     </scenes>
     <resources>

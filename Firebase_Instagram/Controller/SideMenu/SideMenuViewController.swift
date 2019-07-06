@@ -4,7 +4,7 @@ import FBSDKLoginKit
 import Firebase
 import FirebaseAuth
 
-class SideMenuViewController: UIViewController {
+class SideMenuViewController: UIViewController{
     
 
     @IBOutlet weak var profileImageOut: UIImageView!
@@ -27,7 +27,7 @@ class SideMenuViewController: UIViewController {
 //        }
 //        profileUser.text = Auth.auth().currentUser?.displayName
         
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view.InstaClone.
     }
     @IBAction func sideMenuAction(_ sender: UIButton) {
         if sender.tag == 1{
@@ -35,28 +35,33 @@ class SideMenuViewController: UIViewController {
         }
         else if sender.tag == 2{
             
+            let text = "Share Action"
+            let textToShare = [text]
+            let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
+            activityViewController.popoverPresentationController?.sourceView = self.view
+            activityViewController.excludedActivityTypes = [ UIActivity.ActivityType.mail, UIActivity.ActivityType.message]
+            self.present(activityViewController, animated: true, completion: nil)
         }
         else if sender.tag == 3{
-//            do{
-//                let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current?.tokenString ?? "")
-//                Auth.auth().currentUser?.link(with:credential,completion:nil)
-//                try! Auth.auth().signOut()
-//                Auth.auth().signInAnonymously()
-//                LoginManager().logOut()
-//                print("Logged Out Successfully")
-//            }catch{
-//                print("User Sign Out Error : \(error)")
-//            }
-//
-//            UserDefaults.standard.set(false, forKey:"login")
-//
-//            self.dismiss(animated: true, completion: nil)
-//            navigationController?.popToRootViewController(animated: true)
-//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController
-//            let appDelegate = UIApplication.shared.delegate as! AppDelegate
-//            appDelegate.window?.rootViewController = vc
+            do{
+                let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current?.tokenString ?? "")
+                Auth.auth().currentUser?.link(with:credential,completion:nil)
+                try! Auth.auth().signOut()
+                Auth.auth().signInAnonymously()
+                LoginManager().logOut()
+                print("Logged Out Successfully")
+            }catch{
+                print("LogIn Error :-------------- \(error)")
+            }
+
+            UserDefaults.standard.set(false, forKey:"login")
+
+            self.dismiss(animated: true, completion: nil)
+            navigationController?.popToRootViewController(animated: true)
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.window?.rootViewController = vc
             
         }
     }
-    
 }

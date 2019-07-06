@@ -21,18 +21,8 @@ class FirstTabbBar: UIViewController, UITableViewDelegate, UITableViewDataSource
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController!.isNavigationBarHidden = true
-        self.navigationItem.leftBarButtonItem = nil
-        self.navigationItem.hidesBackButton = true
         
-        
-  
-        tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
-        readData()
-
-        self.tableView.estimatedRowHeight = 80
-        self.tableView.rowHeight = UITableView.automaticDimension
-        tableView.reloadData()
+        ViewLoad()
     }
     override func viewWillAppear(_ animated: Bool) {
         readData()
@@ -42,7 +32,22 @@ class FirstTabbBar: UIViewController, UITableViewDelegate, UITableViewDataSource
     @IBAction func manuBarButton(_ sender: UIBarButtonItem) {
         present(SideMenuManager.default.menuLeftNavigationController!, animated: true, completion: nil)
     }
+    func ViewLoad() {
+        self.navigationController!.isNavigationBarHidden = true
+        self.navigationItem.leftBarButtonItem = nil
+        self.navigationItem.hidesBackButton = true
+        
+        
+        
+        tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
+        readData()
+        
+        self.tableView.estimatedRowHeight = 150
+        self.tableView.rowHeight = UITableView.automaticDimension
+        tableView.reloadData()
+    }
 }
+
 
 //MARK:- IMAGE-FETCH extension
 extension FirstTabbBar{
@@ -84,6 +89,7 @@ extension FirstTabbBar{
     }
 }
 
+
 //MARK:- TABLEVIEW extension
 extension FirstTabbBar{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -122,10 +128,12 @@ extension FirstTabbBar{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
-        //return 400
+        //return UITableView.automaticDimension
+        return 400
     }
 }
+
+
 //MARK:- COLLECTIONVIEW extension
 extension FirstTabbBar{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
